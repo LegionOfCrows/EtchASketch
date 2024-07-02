@@ -1,11 +1,17 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+#container {
     display: flex;
+    flex-wrap: wrap;
+    height: 960px;
+    width: 960px;
 }
 
 .drawCell {
     width: 100px;
-    height: 100px;
+    height:100px;
     border: 1px solid #000;
 }

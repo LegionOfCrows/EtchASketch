@@ -1,15 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
 
-let body = document.body;
+const container = document.getElementById('container');
+let sideLength = 16
+createGrid(sideLength);
+})
 
-let sideLength = 16;
-
+function createGrid(sideLength){
 for (let index = 0; index <sideLength; index++) {
-    for (let j = 0; index <sideLength; j++){
+    for (let j = 0; j <sideLength; j++){
         let drawCell = document.createElement("div");
         drawCell.classList.add("drawCell");
-        body.appendChild(drawCell)
+        container.appendChild(drawCell);
 
     }
     
-}})
+}}
